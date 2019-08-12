@@ -44,7 +44,7 @@ function text_resize_theme() {
 function text_resize_library_info_alter(&$libraries, $extension) {
   $config = \Drupal::config('text_resize.settings');
   $settings = $config->get();
-
+  // Testing Purpose
   $libraries['drupalSettings']['drupalSettings']['text_resize'] = [
     'text_resize_scope' => $settings['text_resize_scope'],
     'text_resize_minimum' => $settings['text_resize_minimum'],
